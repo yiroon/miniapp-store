@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+  {{userInfo.basic.name || '【无名】'}}
+  </view>
+  <view>
+  {{msg}}
+  </view>
+  <view wx:for="{{list}}" wx:key="key" wx:for-item="item">
+  {{item}}
+  </view>
+  <button bindtap="add">ADD</button>
+  <button style="margin-top:20rpx;" bindtap="remove">remove</button>
+
+  <view style="font-weight:bold;margin-top:40rpx;">其他页面</view>
+  <navigator style="padding:20rpx;margin-top:20rpx;" url="/pages/index/test">OPEN TEST</navigator>
+  <navigator style="padding:20rpx;" url="/pages/index/other">OPEN other</navigator>
+</view>

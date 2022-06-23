@@ -1,0 +1,5 @@
+<!--pages/index/test.wxml-->
+<text>{{userInfo.basic.name}}</text>
+<view>
+{{msg}}
+</view>
